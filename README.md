@@ -1,6 +1,6 @@
 # Web3-Enabled AI Agents with Eliza
 
-In this guide, I’ll cover the core concepts of the Eliza framework, show you how to create your own agent character, and demonstrate blockchain interactions—like ETH transfers—using the @elizaos/plugin-evm plugin.
+In this guide, I’ll dive into the core concepts of the Eliza framework, walk you through creating your own AI agent character, and demonstrate how to handle blockchain interactions—like ETH transfers—using the `@elizaos/plugin-evm` plugin. For a deeper look at the process (and some of the pitfalls I encountered), check out my Substack post here: [How to Build Web3-Enabled AI Agents with Eliza](https://open.substack.com/pub/luisvid/p/how-to-build-web3-enabled-ai-agents?r=v1ib&utm_campaign=post&utm_medium=web).
 
 # Eliza 🤖
 
