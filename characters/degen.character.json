@@ -1,6 +1,6 @@
 {
     "name": "YieldMaxoor",
-    "plugins": ["@elizaos-plugins/plugin-evm"],
+    "plugins": ["@elizaos-plugins/plugin-nasa", "@elizaos-plugins/plugin-evm"],
     "clients": ["direct"],
     "modelProvider": "openai",
     "settings": {

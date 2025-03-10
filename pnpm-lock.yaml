@@ -143,6 +143,9 @@ importers:
       '@elizaos-plugins/plugin-evm':
         specifier: workspace:^
         version: link:../packages/plugin-evm
+      '@elizaos-plugins/plugin-nasa':
+        specifier: workspace:*
+        version: link:../packages/plugin-nasa
       '@elizaos-plugins/plugin-tee':
         specifier: workspace:^
         version: link:../packages/plugin-tee
@@ -642,6 +645,25 @@ importers:
       '@biomejs/biome':
         specifier: 1.9.4
         version: 1.9.4
+
+  packages/plugin-nasa:
+    dependencies:
+      '@elizaos/core':
+        specifier: workspace:*
+        version: link:../core
+      tsup:
+        specifier: 8.3.5
+        version: 8.3.5(@swc/core@1.11.4(@swc/helpers@0.5.15))(jiti@1.21.7)(postcss@8.5.3)(typescript@5.8.2)(yaml@2.7.0)
+      whatwg-url:
+        specifier: 7.1.0
+        version: 7.1.0
+      zod:
+        specifier: ^3.22.4
+        version: 3.24.2
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.17.23
 
   packages/plugin-tee:
     dependencies:
@@ -4612,6 +4634,9 @@ packages:
 
   '@types/node@18.19.76':
     resolution: {integrity: sha512-yvR7Q9LdPz2vGpmpJX5LolrgRdWvB67MJKDPSgIIzpFbaf9a1j/f5DnLp5VDyHGMR0QZHlTr1afsD87QCXFHKw==}
+
+  '@types/node@20.17.23':
+    resolution: {integrity: sha512-8PCGZ1ZJbEZuYNTMqywO+Sj4vSKjSjT6Ua+6RFOYlEvIvKQABPtrNkoVSLSKDb4obYcMhspVKmsw8Cm10NFRUg==}
 
   '@types/node@22.13.5':
     resolution: {integrity: sha512-+lTU0PxZXn0Dr1NBtC7Y8cR21AJr87dLLU953CWA6pMxxv/UDc7jYAY90upcrie1nRcD6XNG5HOYEDtgW5TxAg==}
@@ -18336,6 +18361,10 @@ snapshots:
   '@types/node@18.19.76':
     dependencies:
       undici-types: 5.26.5
+
+  '@types/node@20.17.23':
+    dependencies:
+      undici-types: 6.19.8
 
   '@types/node@22.13.5':
     dependencies:
